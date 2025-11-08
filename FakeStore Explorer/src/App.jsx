@@ -23,6 +23,8 @@ export default function App() {
   if (error) return <h2 className="error">{error}</h2>;
 
   return (
+    <div>
+    <h1>Product Card</h1>
     <div className="container">
       {products.map((product) => (
         <div className="card" key={product.id}>
@@ -32,6 +34,7 @@ export default function App() {
           <span className="price">${product.price}</span>
         </div>
       ))}
+    </div>
     </div>
   );
 }
